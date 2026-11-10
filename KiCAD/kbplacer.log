@@ -1,0 +1,766 @@
+INFO: kbplacer_plugin_action.py:73: Plugin version: 0.16
+INFO: kbplacer_plugin_action.py:74: Python version: '3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:75: KiCad version: 10.0.3 with 4.2.2 msw (phoenix) wxWidgets 3.3.2
+INFO: kbplacer_dialog.py:695: Language: en
+INFO: kbplacer_plugin_action.py:83: GUI state: {"layout_path": "C:\\Users\\aades\\Downloads\\keyboard-layout (4).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "HE{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": 1}, "enable_diode_placement": false, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 4.0, "orientation": 90.0, "side": "Back"}, "template_path": "", "start_index": -1}, "additional_elements": [{"annotation_format": "KLEDTOP{}", "position_option": "Custom", "position": {"x": 0.0, "y": -5.075, "orientation": 0.0, "side": "Front"}, "template_path": "", "start_index": -1}, {"annotation_format": "KLEDTOPC{}", "position_option": "Custom", "position": {"x": -4.25, "y": -5.7, "orientation": -90.0, "side": "Front"}, "template_path": "", "start_index": -1}, {"annotation_format": "KLEDBOT{}", "position_option": "Custom", "position": {"x": 0.0, "y": 5.075, "orientation": 180.0, "side": "Front"}, "template_path": "", "start_index": -1}, {"annotation_format": "KLEDBOTC{}", "position_option": "Custom", "position": {"x": 4.25, "y": 5.7, "orientation": 90.0, "side": "Front"}, "template_path": "", "start_index": -1}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0, "layout_offset": null}
+WARNING: key_placer.py:136: Unexpected switch net position detected, each switch should have two unique nets unambiguously defining position in key matrix, switch-by-matrix association can't be used
+DEBUG: key_placer.py:143: Switches by nets: {}
+DEBUG: key_placer.py:147: Diodes by switch: {}
+DEBUG: board_modifier.py:73: Searching for HE1 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+INFO: key_placer.py:624: Looking for connection template between HE1 and other elements
+DEBUG: board_modifier.py:132: Getting HE1 footprint position: (38100000, 57150000)
+INFO: key_placer.py:668: Got connection template: Track [(1684380, -3571880) (-937500, -950000)], Track [(24705440, -3571880) (1684380, -3571880)], Track [(27714344, -562976) (24705440, -3571880)], Track [(27714344, 9227328) (27714344, -562976)]
+INFO: kle_serial.py:1031: User layout: [[{'y': 1}, '~\n`', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '_\n-', '+\n=', {'a': 6, 'w': 2}, 'Backspace', 'Home'], [{'a': 4, 'w': 1.5}, 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', {'w': 1.5}, '|\n\\', {'a': 6}, 'Page Up'], [{'a': 4, 'w': 1.75}, 'Caps Lock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':\n;', '"\n\'', {'a': 6, 'w': 2.25}, 'Enter', 'Page Down'], [{'w': 2.25}, 'Shift', {'a': 4}, 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'a': 6, 'w': 1.75}, 'Shift', {'a': 7}, '↑', {'a': 6}, 'End'], [{'w': 1.25}, 'Ctrl', {'w': 1.25}, 'Win', {'w': 1.25}, 'Alt', {'a': 7, 'w': 6.25}, '', {'a': 6}, 'Alt', 'Fn', 'Ctrl', {'a': 7}, '←', '↓', '→']]
+DEBUG: key_placer.py:755: Using key 1U distance: (19.05, 19.05) mm
+DEBUG: key_placer.py:773: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:1125: Layout with: x_ortholinear_keys=29, y_ortholinear_keys=68, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1150: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>]
+DEBUG: board_modifier.py:119: Setting HE1 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE2 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE3 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE4 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE5 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE6 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE7 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE8 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE9 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE10 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE11 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE12 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE13 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE14 footprint position: (295275000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE15 footprint position: (323850000, 57150000)
+DEBUG: board_modifier.py:119: Setting HE16 footprint position: (42862500, 76200000)
+DEBUG: board_modifier.py:119: Setting HE17 footprint position: (66675000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE18 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE19 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE20 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE21 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE22 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE23 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE24 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE25 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE26 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE27 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE28 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE29 footprint position: (300037500, 76200000)
+DEBUG: board_modifier.py:119: Setting HE30 footprint position: (323850000, 76200000)
+DEBUG: board_modifier.py:119: Setting HE31 footprint position: (45243750, 95250000)
+DEBUG: board_modifier.py:119: Setting HE32 footprint position: (71437500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE33 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE34 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE35 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE36 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE37 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE38 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE39 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE40 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE41 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE42 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:119: Setting HE43 footprint position: (292893750, 95250000)
+DEBUG: board_modifier.py:119: Setting HE44 footprint position: (323850000, 95250000)
+DEBUG: board_modifier.py:119: Setting HE45 footprint position: (50006250, 114300000)
+DEBUG: board_modifier.py:119: Setting HE46 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE47 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE48 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE49 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE50 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE51 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE52 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE53 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE54 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE55 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:119: Setting HE56 footprint position: (278606250, 114300000)
+DEBUG: board_modifier.py:119: Setting HE57 footprint position: (304800000, 114300000)
+DEBUG: board_modifier.py:119: Setting HE58 footprint position: (323850000, 114300000)
+DEBUG: board_modifier.py:119: Setting HE59 footprint position: (40481250, 133350000)
+DEBUG: board_modifier.py:119: Setting HE60 footprint position: (64293750, 133350000)
+DEBUG: board_modifier.py:119: Setting HE61 footprint position: (88106250, 133350000)
+DEBUG: board_modifier.py:119: Setting HE62 footprint position: (159543750, 133350000)
+DEBUG: board_modifier.py:119: Setting HE63 footprint position: (228600000, 133350000)
+DEBUG: board_modifier.py:119: Setting HE64 footprint position: (247650000, 133350000)
+DEBUG: board_modifier.py:119: Setting HE65 footprint position: (266700000, 133350000)
+DEBUG: board_modifier.py:119: Setting HE66 footprint position: (285750000, 133350000)
+DEBUG: board_modifier.py:119: Setting HE67 footprint position: (304800000, 133350000)
+DEBUG: board_modifier.py:119: Setting HE68 footprint position: (323850000, 133350000)
+INFO: key_placer.py:1173: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.UNCHANGED: 'Unchanged'>, position=ElementPosition(x=5.08, y=4.0, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='', start_index=-1)]
+DEBUG: key_placer.py:928: Placing additional elements for HE59
+DEBUG: board_modifier.py:132: Getting HE59 footprint position: (40481250, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP59 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP59 footprint position: (40481250, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC59 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC59 footprint position: (36231250, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT59 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT59 footprint position: (40481250, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC59 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC59 footprint position: (44731250, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE44
+DEBUG: board_modifier.py:132: Getting HE44 footprint position: (323850000, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP44 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP44 footprint position: (323850000, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC44 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC44 footprint position: (319600000, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT44 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT44 footprint position: (323850000, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC44 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC44 footprint position: (328100000, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE54
+DEBUG: board_modifier.py:132: Getting HE54 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP54 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP54 footprint position: (233362500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC54 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC54 footprint position: (229112500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT54 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT54 footprint position: (233362500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC54 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC54 footprint position: (237612500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE34
+DEBUG: board_modifier.py:132: Getting HE34 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP34 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP34 footprint position: (109537500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC34 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC34 footprint position: (105287500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT34 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT34 footprint position: (109537500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC34 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC34 footprint position: (113787500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE8
+DEBUG: board_modifier.py:132: Getting HE8 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP8 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP8 footprint position: (171450000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC8 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC8 footprint position: (167200000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT8 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT8 footprint position: (171450000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC8 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC8 footprint position: (175700000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE32
+DEBUG: board_modifier.py:132: Getting HE32 footprint position: (71437500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP32 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP32 footprint position: (71437500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC32 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC32 footprint position: (67187500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT32 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT32 footprint position: (71437500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC32 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC32 footprint position: (75687500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE35
+DEBUG: board_modifier.py:132: Getting HE35 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP35 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP35 footprint position: (128587500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC35 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC35 footprint position: (124337500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT35 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT35 footprint position: (128587500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC35 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC35 footprint position: (132837500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE50
+DEBUG: board_modifier.py:132: Getting HE50 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP50 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP50 footprint position: (157162500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC50 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC50 footprint position: (152912500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT50 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT50 footprint position: (157162500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC50 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC50 footprint position: (161412500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE56
+DEBUG: board_modifier.py:132: Getting HE56 footprint position: (278606250, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP56 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP56 footprint position: (278606250, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC56 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC56 footprint position: (274356250, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT56 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT56 footprint position: (278606250, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC56 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC56 footprint position: (282856250, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE57
+DEBUG: board_modifier.py:132: Getting HE57 footprint position: (304800000, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP57 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP57 footprint position: (304800000, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC57 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC57 footprint position: (300550000, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT57 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT57 footprint position: (304800000, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC57 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC57 footprint position: (309050000, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE60
+DEBUG: board_modifier.py:132: Getting HE60 footprint position: (64293750, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP60 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP60 footprint position: (64293750, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC60 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC60 footprint position: (60043750, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT60 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT60 footprint position: (64293750, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC60 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC60 footprint position: (68543750, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE22
+DEBUG: board_modifier.py:132: Getting HE22 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP22 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP22 footprint position: (161925000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC22 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC22 footprint position: (157675000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT22 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT22 footprint position: (161925000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC22 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC22 footprint position: (166175000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE9
+DEBUG: board_modifier.py:132: Getting HE9 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP9 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP9 footprint position: (190500000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC9 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC9 footprint position: (186250000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT9 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT9 footprint position: (190500000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC9 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC9 footprint position: (194750000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE65
+DEBUG: board_modifier.py:132: Getting HE65 footprint position: (266700000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP65 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP65 footprint position: (266700000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC65 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC65 footprint position: (262450000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT65 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT65 footprint position: (266700000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC65 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC65 footprint position: (270950000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE13
+DEBUG: board_modifier.py:132: Getting HE13 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP13 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP13 footprint position: (266700000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC13 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC13 footprint position: (262450000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT13 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT13 footprint position: (266700000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC13 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC13 footprint position: (270950000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE26
+DEBUG: board_modifier.py:132: Getting HE26 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP26 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP26 footprint position: (238125000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC26 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC26 footprint position: (233875000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT26 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT26 footprint position: (238125000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC26 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC26 footprint position: (242375000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE37
+DEBUG: board_modifier.py:132: Getting HE37 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP37 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP37 footprint position: (166687500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC37 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC37 footprint position: (162437500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT37 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT37 footprint position: (166687500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC37 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC37 footprint position: (170937500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE20
+DEBUG: board_modifier.py:132: Getting HE20 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP20 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP20 footprint position: (123825000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC20 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC20 footprint position: (119575000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT20 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT20 footprint position: (123825000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC20 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC20 footprint position: (128075000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE66
+DEBUG: board_modifier.py:132: Getting HE66 footprint position: (285750000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP66 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP66 footprint position: (285750000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC66 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC66 footprint position: (281500000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT66 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT66 footprint position: (285750000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC66 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC66 footprint position: (290000000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE39
+DEBUG: board_modifier.py:132: Getting HE39 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP39 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP39 footprint position: (204787500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC39 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC39 footprint position: (200537500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT39 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT39 footprint position: (204787500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC39 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC39 footprint position: (209037500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE3
+DEBUG: board_modifier.py:132: Getting HE3 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP3 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP3 footprint position: (76200000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC3 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC3 footprint position: (71950000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT3 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT3 footprint position: (76200000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC3 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC3 footprint position: (80450000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE42
+DEBUG: board_modifier.py:132: Getting HE42 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP42 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP42 footprint position: (261937500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC42 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC42 footprint position: (257687500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT42 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT42 footprint position: (261937500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC42 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC42 footprint position: (266187500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE1
+DEBUG: board_modifier.py:132: Getting HE1 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP1 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP1 footprint position: (38100000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC1 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC1 footprint position: (33850000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT1 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT1 footprint position: (38100000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC1 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC1 footprint position: (42350000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE33
+DEBUG: board_modifier.py:132: Getting HE33 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP33 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP33 footprint position: (90487500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC33 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC33 footprint position: (86237500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT33 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT33 footprint position: (90487500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC33 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC33 footprint position: (94737500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE19
+DEBUG: board_modifier.py:132: Getting HE19 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP19 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP19 footprint position: (104775000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC19 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC19 footprint position: (100525000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT19 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT19 footprint position: (104775000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC19 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC19 footprint position: (109025000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE17
+DEBUG: board_modifier.py:132: Getting HE17 footprint position: (66675000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP17 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP17 footprint position: (66675000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC17 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC17 footprint position: (62425000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT17 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT17 footprint position: (66675000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC17 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC17 footprint position: (70925000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE49
+DEBUG: board_modifier.py:132: Getting HE49 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP49 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP49 footprint position: (138112500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC49 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC49 footprint position: (133862500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT49 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT49 footprint position: (138112500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC49 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC49 footprint position: (142362500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE25
+DEBUG: board_modifier.py:132: Getting HE25 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP25 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP25 footprint position: (219075000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC25 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC25 footprint position: (214825000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT25 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT25 footprint position: (219075000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC25 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC25 footprint position: (223325000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE5
+DEBUG: board_modifier.py:132: Getting HE5 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP5 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP5 footprint position: (114300000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC5 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC5 footprint position: (110050000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT5 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT5 footprint position: (114300000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC5 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC5 footprint position: (118550000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE7
+DEBUG: board_modifier.py:132: Getting HE7 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP7 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP7 footprint position: (152400000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC7 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC7 footprint position: (148150000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT7 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT7 footprint position: (152400000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC7 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC7 footprint position: (156650000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE31
+DEBUG: board_modifier.py:132: Getting HE31 footprint position: (45243750, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP31 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP31 footprint position: (45243750, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC31 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC31 footprint position: (40993750, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT31 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT31 footprint position: (45243750, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC31 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC31 footprint position: (49493750, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE28
+DEBUG: board_modifier.py:132: Getting HE28 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP28 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP28 footprint position: (276225000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC28 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC28 footprint position: (271975000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT28 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT28 footprint position: (276225000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC28 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC28 footprint position: (280475000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE63
+DEBUG: board_modifier.py:132: Getting HE63 footprint position: (228600000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP63 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP63 footprint position: (228600000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC63 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC63 footprint position: (224350000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT63 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT63 footprint position: (228600000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC63 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC63 footprint position: (232850000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE21
+DEBUG: board_modifier.py:132: Getting HE21 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP21 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP21 footprint position: (142875000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC21 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC21 footprint position: (138625000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT21 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT21 footprint position: (142875000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC21 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC21 footprint position: (147125000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE36
+DEBUG: board_modifier.py:132: Getting HE36 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP36 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP36 footprint position: (147637500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC36 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC36 footprint position: (143387500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT36 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT36 footprint position: (147637500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC36 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC36 footprint position: (151887500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE47
+DEBUG: board_modifier.py:132: Getting HE47 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP47 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP47 footprint position: (100012500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC47 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC47 footprint position: (95762500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT47 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT47 footprint position: (100012500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC47 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC47 footprint position: (104262500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE62
+DEBUG: board_modifier.py:132: Getting HE62 footprint position: (159543750, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP62 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP62 footprint position: (159543750, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC62 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC62 footprint position: (155293750, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT62 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT62 footprint position: (159543750, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC62 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC62 footprint position: (163793750, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE30
+DEBUG: board_modifier.py:132: Getting HE30 footprint position: (323850000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP30 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP30 footprint position: (323850000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC30 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC30 footprint position: (319600000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT30 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT30 footprint position: (323850000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC30 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC30 footprint position: (328100000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE29
+DEBUG: board_modifier.py:132: Getting HE29 footprint position: (300037500, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP29 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP29 footprint position: (300037500, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC29 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC29 footprint position: (295787500, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT29 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT29 footprint position: (300037500, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC29 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC29 footprint position: (304287500, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE18
+DEBUG: board_modifier.py:132: Getting HE18 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP18 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP18 footprint position: (85725000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC18 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC18 footprint position: (81475000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT18 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT18 footprint position: (85725000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC18 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC18 footprint position: (89975000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE61
+DEBUG: board_modifier.py:132: Getting HE61 footprint position: (88106250, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP61 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP61 footprint position: (88106250, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC61 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC61 footprint position: (83856250, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT61 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT61 footprint position: (88106250, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC61 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC61 footprint position: (92356250, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE14
+DEBUG: board_modifier.py:132: Getting HE14 footprint position: (295275000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP14 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP14 footprint position: (295275000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC14 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC14 footprint position: (291025000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT14 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT14 footprint position: (295275000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC14 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC14 footprint position: (299525000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE58
+DEBUG: board_modifier.py:132: Getting HE58 footprint position: (323850000, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP58 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP58 footprint position: (323850000, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC58 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC58 footprint position: (319600000, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT58 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT58 footprint position: (323850000, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC58 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC58 footprint position: (328100000, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE43
+DEBUG: board_modifier.py:132: Getting HE43 footprint position: (292893750, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP43 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP43 footprint position: (292893750, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC43 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC43 footprint position: (288643750, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT43 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT43 footprint position: (292893750, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC43 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC43 footprint position: (297143750, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE68
+DEBUG: board_modifier.py:132: Getting HE68 footprint position: (323850000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP68 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP68 footprint position: (323850000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC68 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC68 footprint position: (319600000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT68 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT68 footprint position: (323850000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC68 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC68 footprint position: (328100000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE51
+DEBUG: board_modifier.py:132: Getting HE51 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP51 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP51 footprint position: (176212500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC51 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC51 footprint position: (171962500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT51 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT51 footprint position: (176212500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC51 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC51 footprint position: (180462500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE4
+DEBUG: board_modifier.py:132: Getting HE4 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP4 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP4 footprint position: (95250000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC4 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC4 footprint position: (91000000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT4 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT4 footprint position: (95250000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC4 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC4 footprint position: (99500000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE12
+DEBUG: board_modifier.py:132: Getting HE12 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP12 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP12 footprint position: (247650000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC12 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC12 footprint position: (243400000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT12 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT12 footprint position: (247650000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC12 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC12 footprint position: (251900000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE15
+DEBUG: board_modifier.py:132: Getting HE15 footprint position: (323850000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP15 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP15 footprint position: (323850000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC15 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC15 footprint position: (319600000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT15 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT15 footprint position: (323850000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC15 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC15 footprint position: (328100000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE45
+DEBUG: board_modifier.py:132: Getting HE45 footprint position: (50006250, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP45 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP45 footprint position: (50006250, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC45 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC45 footprint position: (45756250, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT45 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT45 footprint position: (50006250, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC45 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC45 footprint position: (54256250, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE23
+DEBUG: board_modifier.py:132: Getting HE23 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP23 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP23 footprint position: (180975000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC23 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC23 footprint position: (176725000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT23 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT23 footprint position: (180975000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC23 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC23 footprint position: (185225000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE27
+DEBUG: board_modifier.py:132: Getting HE27 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP27 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP27 footprint position: (257175000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC27 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC27 footprint position: (252925000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT27 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT27 footprint position: (257175000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC27 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC27 footprint position: (261425000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE6
+DEBUG: board_modifier.py:132: Getting HE6 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP6 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP6 footprint position: (133350000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC6 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC6 footprint position: (129100000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT6 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT6 footprint position: (133350000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC6 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC6 footprint position: (137600000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE41
+DEBUG: board_modifier.py:132: Getting HE41 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP41 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP41 footprint position: (242887500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC41 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC41 footprint position: (238637500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT41 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT41 footprint position: (242887500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC41 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC41 footprint position: (247137500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE46
+DEBUG: board_modifier.py:132: Getting HE46 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP46 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP46 footprint position: (80962500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC46 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC46 footprint position: (76712500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT46 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT46 footprint position: (80962500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC46 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC46 footprint position: (85212500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE40
+DEBUG: board_modifier.py:132: Getting HE40 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP40 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP40 footprint position: (223837500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC40 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC40 footprint position: (219587500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT40 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT40 footprint position: (223837500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC40 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC40 footprint position: (228087500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE67
+DEBUG: board_modifier.py:132: Getting HE67 footprint position: (304800000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP67 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP67 footprint position: (304800000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC67 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC67 footprint position: (300550000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT67 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT67 footprint position: (304800000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC67 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC67 footprint position: (309050000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE48
+DEBUG: board_modifier.py:132: Getting HE48 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP48 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP48 footprint position: (119062500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC48 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC48 footprint position: (114812500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT48 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT48 footprint position: (119062500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC48 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC48 footprint position: (123312500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE10
+DEBUG: board_modifier.py:132: Getting HE10 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP10 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP10 footprint position: (209550000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC10 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC10 footprint position: (205300000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT10 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT10 footprint position: (209550000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC10 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC10 footprint position: (213800000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE53
+DEBUG: board_modifier.py:132: Getting HE53 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP53 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP53 footprint position: (214312500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC53 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC53 footprint position: (210062500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT53 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT53 footprint position: (214312500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC53 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC53 footprint position: (218562500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE24
+DEBUG: board_modifier.py:132: Getting HE24 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP24 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP24 footprint position: (200025000, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC24 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC24 footprint position: (195775000, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT24 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT24 footprint position: (200025000, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC24 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC24 footprint position: (204275000, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE38
+DEBUG: board_modifier.py:132: Getting HE38 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP38 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP38 footprint position: (185737500, 90175000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC38 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC38 footprint position: (181487500, 89550000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT38 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT38 footprint position: (185737500, 100325000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC38 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC38 footprint position: (189987500, 100950000)
+DEBUG: key_placer.py:928: Placing additional elements for HE2
+DEBUG: board_modifier.py:132: Getting HE2 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP2 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP2 footprint position: (57150000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC2 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC2 footprint position: (52900000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT2 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT2 footprint position: (57150000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC2 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC2 footprint position: (61400000, 62850000)
+DEBUG: key_placer.py:928: Placing additional elements for HE52
+DEBUG: board_modifier.py:132: Getting HE52 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP52 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP52 footprint position: (195262500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC52 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC52 footprint position: (191012500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT52 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT52 footprint position: (195262500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC52 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC52 footprint position: (199512500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE64
+DEBUG: board_modifier.py:132: Getting HE64 footprint position: (247650000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP64 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP64 footprint position: (247650000, 128275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC64 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC64 footprint position: (243400000, 127650000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT64 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT64 footprint position: (247650000, 138425000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC64 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC64 footprint position: (251900000, 139050000)
+DEBUG: key_placer.py:928: Placing additional elements for HE16
+DEBUG: board_modifier.py:132: Getting HE16 footprint position: (42862500, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP16 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP16 footprint position: (42862500, 71125000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC16 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC16 footprint position: (38612500, 70500000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT16 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT16 footprint position: (42862500, 81275000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC16 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC16 footprint position: (47112500, 81900000)
+DEBUG: key_placer.py:928: Placing additional elements for HE55
+DEBUG: board_modifier.py:132: Getting HE55 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP55 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP55 footprint position: (252412500, 109225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC55 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC55 footprint position: (248162500, 108600000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT55 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT55 footprint position: (252412500, 119375000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC55 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC55 footprint position: (256662500, 120000000)
+DEBUG: key_placer.py:928: Placing additional elements for HE11
+DEBUG: board_modifier.py:132: Getting HE11 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOP11 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOP11 footprint position: (228600000, 52075000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDTOPC11 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDTOPC11 footprint position: (224350000, 51450000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOT11 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOT11 footprint position: (228600000, 62225000)
+DEBUG: board_modifier.py:84: Searching for optional KLEDBOTC11 footprint in D:/Aurora65HE/Aurora 65HE.kicad_pcb
+DEBUG: board_modifier.py:119: Setting KLEDBOTC11 footprint position: (232850000, 62850000)
